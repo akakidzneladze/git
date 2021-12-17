@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>setTimeout</title> 
+  </head> 
+  <body>
+    <button ID="start" onclick="startonclick()">გაშვება</button>
+    <button ID="stop" onclick="stoponclick()">უარყოფა</button> 
+    <script>
+	  function startonclick(){
+        myproc=setTimeout("window.open('https://www.google.com/','win1','top=200, left=600, width=600, height=270')",5000);
+      }
+      function stoponclick(){
+       clearTimeout(myproc);
+      }
+    </script>	
+  </body> 
+</html>
